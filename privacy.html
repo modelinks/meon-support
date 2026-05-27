@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライバシーポリシー — MeON</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="./" class="nav__brand">MeON</a>
+      <div class="nav__links">
+        <a href="./">ホーム</a>
+        <a href="terms.html">利用規約</a>
+        <a href="privacy.html" class="active">プライバシー</a>
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">最終更新日: 2026-05-27</p>
+
+    <p>MeON (以下「本アプリ」) の運営者 (以下「運営者」) は、利用者のプライバシー保護を重要視し、個人情報および利用データの取り扱いについて以下のとおり定めます。</p>
+
+    <div class="callout">
+      <strong>要点だけ知りたい方へ:</strong>
+      <ul>
+        <li>写真は端末内に保存され、試着結果生成のとき以外は端末外に出ません。</li>
+        <li>試着時のみ、暗号化通信で Google Gemini API に送信されますが、Google および当方サーバーで保管はされません。</li>
+        <li>AI の学習には利用されません。</li>
+        <li>個人を識別できる情報 (氏名・住所・電話番号) は一切取得しません。</li>
+      </ul>
+    </div>
+
+    <h2>1. 取得する情報</h2>
+    <ul>
+      <li><strong>プロフィール写真</strong> — 利用者が試着のベースとして登録する写真。端末内 (Documents) にのみ保存されます。</li>
+      <li><strong>服のスクリーンショット / 画像</strong> — 利用者が試着のために選択した画像。端末内および試着履歴として保存されます。</li>
+      <li><strong>試着結果画像</strong> — AI により生成された画像。端末内の履歴として保存されます。</li>
+      <li><strong>利用統計</strong> — アプリの起動・機能利用に関する匿名統計 (バージョン情報・OS バージョン等)。個人を特定できない形式で取得します。</li>
+      <li><strong>App Tracking Transparency (ATT) で許可された場合の広告識別子</strong> — 利用者が iOS の設定で許可した場合のみ。</li>
+    </ul>
+
+    <h2>2. 個人情報の利用目的</h2>
+    <ul>
+      <li>試着画像の生成および履歴管理</li>
+      <li>本アプリの機能改善 (匿名統計に基づく)</li>
+      <li>不具合・問い合わせ対応</li>
+    </ul>
+
+    <h2>3. 第三者への提供</h2>
+    <ol>
+      <li>試着画像の生成のため、利用者の写真 (プロフィール写真および服の画像) は、本アプリ運営者の管理する Cloudflare Worker を経由して Google LLC が提供する Gemini API に送信されます。</li>
+      <li>送信は HTTPS による暗号化通信で行われます。</li>
+      <li>Google LLC は当該データを当該リクエストの処理のためのみに利用し、AI の学習データとしては利用しないことを Google の API 規約上明示しています。詳細は <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API の利用規約</a> をご参照ください。</li>
+      <li>運営者の Cloudflare Worker は、リクエストを Gemini に転送した後、レスポンスを利用者の端末へ返却するのみで、写真や生成画像をサーバー側に保管しません。</li>
+      <li>上記以外の第三者に対し、利用者の同意なく個人情報を提供することはありません。ただし、法令に基づく場合を除きます。</li>
+    </ol>
+
+    <h2>4. データの保管場所と期間</h2>
+    <ul>
+      <li>プロフィール写真、服の画像、試着結果はすべて利用者の端末内にのみ保存されます。</li>
+      <li>運営者は当該データを取得・保管しません。</li>
+      <li>iCloud バックアップが有効になっている場合は、Apple の iCloud に暗号化された形式で含まれます。これは Apple のプライバシーポリシーに従います。</li>
+      <li>利用者はいつでも履歴削除機能、またはアプリのアンインストールにより、端末内のすべてのデータを削除できます。</li>
+    </ul>
+
+    <h2>5. クッキー・解析ツール</h2>
+    <p>本アプリは現時点でクッキーを利用していません。将来的に Google Analytics for Firebase 等の解析ツールを導入する場合、本ポリシーを更新の上、利用者へ通知します。</p>
+
+    <h2>6. 広告について</h2>
+    <p>本アプリは将来的に Google AdMob 等の広告ネットワークを利用することがあります。広告配信に伴うトラッキングは、iOS の App Tracking Transparency (ATT) で利用者の許可を取得した上でのみ実施します。許可されない場合でも、本アプリの基本機能は利用できます。</p>
+
+    <h2>7. アプリ内課金</h2>
+    <p>サブスクリプションおよびポイント購入は、Apple の App Store 経由で行われます。決済情報は Apple が管理し、運営者は決済カード番号などの情報を取得することはありません。</p>
+
+    <h2>8. 利用者の権利</h2>
+    <ul>
+      <li>利用者は、本アプリ内に保存された自身のデータを、いつでも削除することができます。</li>
+      <li>運営者は利用者のデータをサーバー側に保管していないため、データの開示請求は端末内のデータが対象となります。</li>
+      <li>個人情報の取り扱いに関するご質問は、お問い合わせ窓口までご連絡ください。</li>
+    </ul>
+
+    <h2>9. 未成年者の利用</h2>
+    <p>13 歳未満の方が本アプリを利用する場合は、保護者の同意のもとでご利用ください。運営者は、未成年者からの本人特定情報を意図的に収集することはありません。</p>
+
+    <h2>10. ポリシーの変更</h2>
+    <p>本ポリシーは、法令の改正やサービス内容の変更に応じて、必要に応じて改定されます。重要な変更がある場合は、本サポートサイトおよびアプリ内で告知します。</p>
+
+    <h2>11. お問い合わせ</h2>
+    <p>本ポリシーまたは個人情報の取り扱いに関するご質問は、<a href="contact.html">お問い合わせページ</a> よりご連絡ください。</p>
+
+    <p style="margin-top: 40px;">以上</p>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> MeON. All rights reserved.</p>
+    <p>
+      <a href="./">ホーム</a> ・
+      <a href="terms.html">利用規約</a> ・
+      <a href="tokushoho.html">特商法表記</a> ・
+      <a href="contact.html">お問い合わせ</a>
+    </p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
