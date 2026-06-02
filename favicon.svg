@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="lightPurpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EEDCFF" />
+      <stop offset="100%" stop-color="#B886EE" />
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1024" height="1024" rx="256" ry="256" fill="url(#lightPurpleGrad)" />
+
+  <path d="M 773 442 
+           A 270 270 0 1 1 582 251" 
+        stroke="white" 
+        stroke-width="90" 
+        fill="none" 
+        stroke-linecap="round" />
+
+  <path d="M 717 187
+           C 717 267, 677 307, 597 307
+           C 677 307, 717 347, 717 427
+           C 717 347, 757 307, 837 307
+           C 757 307, 717 267, 717 187 Z" 
+        fill="white" />
+</svg>

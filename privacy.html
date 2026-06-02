@@ -1,111 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>プライバシーポリシー — MeON</title>
-  <link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="title-ja" content="プライバシーポリシー - MeON">
+    <meta name="title-en" content="Privacy Policy - MeON">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <title>プライバシーポリシー - MeON</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-  <nav class="nav">
-    <div class="nav__inner">
-      <a href="./" class="nav__brand">MeON</a>
-      <div class="nav__links">
-        <a href="./">ホーム</a>
-        <a href="terms.html">利用規約</a>
-        <a href="privacy.html" class="active">プライバシー</a>
-        <a href="contact.html">お問い合わせ</a>
-      </div>
-    </div>
-  </nav>
+<body data-lang="ja">
+    <button class="lang-switch" type="button" aria-label="Switch language">EN</button>
 
-  <main class="container">
-    <h1>プライバシーポリシー</h1>
-    <p class="meta">最終更新日: 2026-05-27</p>
-
-    <p>MeON (以下「本アプリ」) の運営者 (以下「運営者」) は、利用者のプライバシー保護を重要視し、個人情報および利用データの取り扱いについて以下のとおり定めます。</p>
-
-    <div class="callout">
-      <strong>要点だけ知りたい方へ:</strong>
-      <ul>
-        <li>写真は端末内に保存され、試着結果生成のとき以外は端末外に出ません。</li>
-        <li>試着時のみ、暗号化通信で Google Gemini API に送信されますが、Google および当方サーバーで保管はされません。</li>
-        <li>AI の学習には利用されません。</li>
-        <li>個人を識別できる情報 (氏名・住所・電話番号) は一切取得しません。</li>
-      </ul>
+    <div class="page-header">
+        <a href="./" class="back" data-lang-block="ja">← MeON サポート</a>
+        <a href="./" class="back" data-lang-block="en">← MeON Support</a>
+        <h1 data-lang-block="ja">プライバシーポリシー</h1>
+        <h1 data-lang-block="en">Privacy Policy</h1>
+        <p class="date" data-lang-block="ja">制定：2026年6月1日</p>
+        <p class="date" data-lang-block="en">Effective: June 1, 2026</p>
     </div>
 
-    <h2>1. 取得する情報</h2>
-    <ul>
-      <li><strong>プロフィール写真</strong> — 利用者が試着のベースとして登録する写真。端末内 (Documents) にのみ保存されます。</li>
-      <li><strong>服のスクリーンショット / 画像</strong> — 利用者が試着のために選択した画像。端末内および試着履歴として保存されます。</li>
-      <li><strong>試着結果画像</strong> — AI により生成された画像。端末内の履歴として保存されます。</li>
-      <li><strong>利用統計</strong> — アプリの起動・機能利用に関する匿名統計 (バージョン情報・OS バージョン等)。個人を特定できない形式で取得します。</li>
-      <li><strong>App Tracking Transparency (ATT) で許可された場合の広告識別子</strong> — 利用者が iOS の設定で許可した場合のみ。</li>
-    </ul>
+    <!-- ===== Japanese ===== -->
+    <div class="content" data-lang-block="ja">
+        <p>MeON（以下「本アプリ」）の運営者（以下「運営者」）は、利用者のプライバシー保護を重要視し、個人情報および利用データの取り扱いについて以下のとおり定めます。</p>
 
-    <h2>2. 個人情報の利用目的</h2>
-    <ul>
-      <li>試着画像の生成および履歴管理</li>
-      <li>本アプリの機能改善 (匿名統計に基づく)</li>
-      <li>不具合・問い合わせ対応</li>
-    </ul>
+        <div class="callout">
+            <strong>要点だけ知りたい方へ</strong>
+            <ul>
+                <li>写真は端末内に保存され、試着結果生成のとき以外は端末外に出ません。</li>
+                <li>試着時のみ、暗号化通信で Google Gemini API に送信されますが、Google および当方サーバーで保管はされません。</li>
+                <li>AI の学習には利用されません。</li>
+                <li>個人を識別できる情報（氏名・住所・電話番号）は一切取得しません。</li>
+            </ul>
+        </div>
 
-    <h2>3. 第三者への提供</h2>
-    <ol>
-      <li>試着画像の生成のため、利用者の写真 (プロフィール写真および服の画像) は、本アプリ運営者の管理する Cloudflare Worker を経由して Google LLC が提供する Gemini API に送信されます。</li>
-      <li>送信は HTTPS による暗号化通信で行われます。</li>
-      <li>Google LLC は当該データを当該リクエストの処理のためのみに利用し、AI の学習データとしては利用しないことを Google の API 規約上明示しています。詳細は <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API の利用規約</a> をご参照ください。</li>
-      <li>運営者の Cloudflare Worker は、リクエストを Gemini に転送した後、レスポンスを利用者の端末へ返却するのみで、写真や生成画像をサーバー側に保管しません。</li>
-      <li>上記以外の第三者に対し、利用者の同意なく個人情報を提供することはありません。ただし、法令に基づく場合を除きます。</li>
-    </ol>
+        <h2>1. 取得する情報</h2>
+        <ul>
+            <li><strong>プロフィール写真</strong> — 利用者が試着のベースとして登録する写真。端末内（Documents）にのみ保存されます。</li>
+            <li><strong>服のスクリーンショット / 画像</strong> — 利用者が試着のために選択した画像。端末内および試着履歴として保存されます。</li>
+            <li><strong>試着結果画像</strong> — AI により生成された画像。端末内の履歴として保存されます。</li>
+            <li><strong>利用統計</strong> — アプリの起動・機能利用に関する匿名統計（バージョン情報・OS バージョン等）。個人を特定できない形式で取得します。</li>
+            <li><strong>App Tracking Transparency (ATT) で許可された場合の広告識別子</strong> — 利用者が iOS の設定で許可した場合のみ。</li>
+        </ul>
 
-    <h2>4. データの保管場所と期間</h2>
-    <ul>
-      <li>プロフィール写真、服の画像、試着結果はすべて利用者の端末内にのみ保存されます。</li>
-      <li>運営者は当該データを取得・保管しません。</li>
-      <li>iCloud バックアップが有効になっている場合は、Apple の iCloud に暗号化された形式で含まれます。これは Apple のプライバシーポリシーに従います。</li>
-      <li>利用者はいつでも履歴削除機能、またはアプリのアンインストールにより、端末内のすべてのデータを削除できます。</li>
-    </ul>
+        <h2>2. 個人情報の利用目的</h2>
+        <ul>
+            <li>試着画像の生成および履歴管理</li>
+            <li>本アプリの機能改善（匿名統計に基づく）</li>
+            <li>不具合・問い合わせ対応</li>
+        </ul>
 
-    <h2>5. クッキー・解析ツール</h2>
-    <p>本アプリは現時点でクッキーを利用していません。将来的に Google Analytics for Firebase 等の解析ツールを導入する場合、本ポリシーを更新の上、利用者へ通知します。</p>
+        <h2>3. 第三者への提供・外部送信</h2>
+        <ol>
+            <li>試着画像の生成のため、利用者の写真（プロフィール写真および服の画像）は、本アプリ運営者の管理する Cloudflare Worker を経由して Google LLC が提供する Gemini API に送信されます。</li>
+            <li>送信は HTTPS による暗号化通信で行われます。</li>
+            <li>Google LLC は当該データを当該リクエストの処理のためのみに利用し、AI の学習データとしては利用しないことを Google の API 規約上明示しています。詳細は <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API の利用規約</a> をご参照ください。</li>
+            <li>運営者の Cloudflare Worker は、リクエストを Gemini に転送した後、レスポンスを利用者の端末へ返却するのみで、写真や生成画像をサーバー側に保管しません。</li>
+            <li>上記以外の第三者に対し、利用者の同意なく個人情報を提供することはありません。ただし、法令に基づく場合を除きます。</li>
+        </ol>
 
-    <h2>6. 広告について</h2>
-    <p>本アプリは将来的に Google AdMob 等の広告ネットワークを利用することがあります。広告配信に伴うトラッキングは、iOS の App Tracking Transparency (ATT) で利用者の許可を取得した上でのみ実施します。許可されない場合でも、本アプリの基本機能は利用できます。</p>
+        <h2>4. データの保管場所と期間</h2>
+        <ul>
+            <li>プロフィール写真、服の画像、試着結果はすべて利用者の端末内にのみ保存されます。</li>
+            <li>運営者は当該データを取得・保管しません。</li>
+            <li>iCloud バックアップが有効になっている場合は、Apple の iCloud に暗号化された形式で含まれます。これは Apple のプライバシーポリシーに従います。</li>
+            <li>利用者はいつでも履歴削除機能、またはアプリのアンインストールにより、端末内のすべてのデータを削除できます。</li>
+        </ul>
 
-    <h2>7. アプリ内課金</h2>
-    <p>サブスクリプションおよびポイント購入は、Apple の App Store 経由で行われます。決済情報は Apple が管理し、運営者は決済カード番号などの情報を取得することはありません。</p>
+        <h2>5. クッキー・解析ツール</h2>
+        <p>本アプリではクッキーを利用していません。アプリの利用状況を改善するため、Google Analytics for Firebase および AppsFlyer による匿名化された集計データの取得を行うことがあります。これらにより個人を特定することはできません。</p>
 
-    <h2>8. 利用者の権利</h2>
-    <ul>
-      <li>利用者は、本アプリ内に保存された自身のデータを、いつでも削除することができます。</li>
-      <li>運営者は利用者のデータをサーバー側に保管していないため、データの開示請求は端末内のデータが対象となります。</li>
-      <li>個人情報の取り扱いに関するご質問は、お問い合わせ窓口までご連絡ください。</li>
-    </ul>
+        <h2>6. 広告について</h2>
+        <p>本アプリは Google AdMob 等の広告ネットワークを利用する場合があります。広告配信に伴うトラッキングは、iOS の App Tracking Transparency（ATT）で利用者の許可を取得した上でのみ実施します。許可されない場合でも、本アプリの基本機能は利用できます。</p>
 
-    <h2>9. 未成年者の利用</h2>
-    <p>13 歳未満の方が本アプリを利用する場合は、保護者の同意のもとでご利用ください。運営者は、未成年者からの本人特定情報を意図的に収集することはありません。</p>
+        <h2>7. アプリ内課金</h2>
+        <p>サブスクリプションおよびポイント購入は、Apple の App Store 経由で行われます。決済情報は Apple が管理し、運営者は決済カード番号などの情報を取得することはありません。</p>
 
-    <h2>10. ポリシーの変更</h2>
-    <p>本ポリシーは、法令の改正やサービス内容の変更に応じて、必要に応じて改定されます。重要な変更がある場合は、本サポートサイトおよびアプリ内で告知します。</p>
+        <h2>8. 利用者の権利</h2>
+        <ul>
+            <li>利用者は、本アプリ内に保存された自身のデータを、いつでも削除することができます。</li>
+            <li>運営者は利用者のデータをサーバー側に保管していないため、データの開示請求は端末内のデータが対象となります。</li>
+            <li>個人情報の取り扱いに関するご質問は、お問い合わせ窓口までご連絡ください。</li>
+        </ul>
 
-    <h2>11. お問い合わせ</h2>
-    <p>本ポリシーまたは個人情報の取り扱いに関するご質問は、<a href="contact.html">お問い合わせページ</a> よりご連絡ください。</p>
+        <h2>9. 未成年者の利用</h2>
+        <p>13 歳未満の方が本アプリを利用する場合は、保護者の同意のもとでご利用ください。運営者は、未成年者からの本人特定情報を意図的に収集することはありません。</p>
 
-    <p style="margin-top: 40px;">以上</p>
-  </main>
+        <h2>10. ポリシーの変更</h2>
+        <p>本ポリシーは、法令の改正やサービス内容の変更に応じて、必要に応じて改定されます。重要な変更がある場合は、本サポートサイトおよびアプリ内で告知します。</p>
 
-  <footer>
-    <p>© <span id="year"></span> MeON. All rights reserved.</p>
-    <p>
-      <a href="./">ホーム</a> ・
-      <a href="terms.html">利用規約</a> ・
-      <a href="tokushoho.html">特商法表記</a> ・
-      <a href="contact.html">お問い合わせ</a>
-    </p>
-  </footer>
+        <h2>11. お問い合わせ</h2>
+        <p>本ポリシーまたは個人情報の取り扱いに関するご質問は、<a href="contact.html">お問い合わせページ</a> よりご連絡ください。</p>
+    </div>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <!-- ===== English ===== -->
+    <div class="content" data-lang-block="en">
+        <p>The operator of MeON (the "App") takes your privacy seriously. This Privacy Policy explains how we collect and handle your information.</p>
+
+        <div class="callout">
+            <strong>Quick summary</strong>
+            <ul>
+                <li>Your photos are stored on your device. They leave the device only when generating a try-on image.</li>
+                <li>During try-on, they are sent over an encrypted connection to the Google Gemini API. Neither Google nor we retain them.</li>
+                <li>Your photos are never used to train AI models.</li>
+                <li>We do not collect personally identifiable information (name, address, phone number).</li>
+            </ul>
+        </div>
+
+        <h2>1. Information We Collect</h2>
+        <ul>
+            <li><strong>Profile photo</strong> — A photo you register as the base for try-on. Stored only on your device (in Documents).</li>
+            <li><strong>Outfit screenshots / images</strong> — Images you pick for try-on. Stored on your device as part of your try-on history.</li>
+            <li><strong>Try-on results</strong> — Images generated by AI. Stored on your device as history.</li>
+            <li><strong>Usage analytics</strong> — Anonymous statistics about app launches and feature usage (app version, OS version, etc.). No personal identification.</li>
+            <li><strong>Advertising identifier (IDFA)</strong> — Only if you allow it via the iOS App Tracking Transparency prompt.</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        <ul>
+            <li>To generate try-on images and manage your history</li>
+            <li>To improve the App (based on anonymized statistics)</li>
+            <li>To respond to bug reports and support inquiries</li>
+        </ul>
+
+        <h2>3. Sharing with Third Parties</h2>
+        <ol>
+            <li>To generate try-on images, your photos (profile photo and outfit image) are transmitted, via a Cloudflare Worker we operate, to the Gemini API provided by Google LLC.</li>
+            <li>Transmission uses HTTPS encryption.</li>
+            <li>Per Google's API terms, Google LLC uses this data only to process the request and does not use it to train AI models. See the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Terms</a> for details.</li>
+            <li>Our Cloudflare Worker forwards the request to Gemini and returns the response to your device; it does not store the photos or generated images on the server.</li>
+            <li>We do not share personal information with any other third party without your consent, except as required by law.</li>
+        </ol>
+
+        <h2>4. Where and How Long Data Is Stored</h2>
+        <ul>
+            <li>Profile photos, outfit images, and try-on results are stored only on your device.</li>
+            <li>We do not collect or store this data on our servers.</li>
+            <li>If you have iCloud Backup enabled, data may be included (encrypted) in Apple's iCloud per Apple's privacy policy.</li>
+            <li>You can delete all data anytime via the in-app delete function or by uninstalling the App.</li>
+        </ul>
+
+        <h2>5. Cookies and Analytics</h2>
+        <p>The App does not use cookies. We may collect anonymized aggregate metrics via Google Analytics for Firebase and AppsFlyer to improve the App. These cannot identify individuals.</p>
+
+        <h2>6. Advertising</h2>
+        <p>The App may use ad networks such as Google AdMob. Any advertising-related tracking is performed only after you grant permission via iOS App Tracking Transparency (ATT). Core functionality is available even if you decline.</p>
+
+        <h2>7. In-App Purchases</h2>
+        <p>Subscription and point purchases are processed through the Apple App Store. Apple handles payment information; we never receive your credit card number or similar details.</p>
+
+        <h2>8. Your Rights</h2>
+        <ul>
+            <li>You can delete any of your in-app data at any time.</li>
+            <li>Because we do not store your data on our servers, any disclosure request applies only to data on your device.</li>
+            <li>For questions about how we handle your data, please contact us via the support form.</li>
+        </ul>
+
+        <h2>9. Children</h2>
+        <p>If you are under 13, please use the App with parental consent. We do not knowingly collect personally identifiable information from minors.</p>
+
+        <h2>10. Changes to This Policy</h2>
+        <p>This Policy may be revised in response to legal or service changes. Material updates will be announced on this support site and in the App.</p>
+
+        <h2>11. Contact</h2>
+        <p>For questions about this Policy or how we handle your data, please contact us via the <a href="contact.html">Contact page</a>.</p>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> MeON</p>
+    </footer>
+
+    <script src="assets/lang.js"></script>
 </body>
 </html>

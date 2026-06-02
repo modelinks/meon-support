@@ -1,79 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>お問い合わせ — MeON</title>
-  <link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="title-ja" content="お問い合わせ - MeON">
+    <meta name="title-en" content="Contact - MeON">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <title>お問い合わせ - MeON</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-  <nav class="nav">
-    <div class="nav__inner">
-      <a href="./" class="nav__brand">MeON</a>
-      <div class="nav__links">
-        <a href="./">ホーム</a>
-        <a href="terms.html">利用規約</a>
-        <a href="privacy.html">プライバシー</a>
-        <a href="contact.html" class="active">お問い合わせ</a>
-      </div>
-    </div>
-  </nav>
+<body data-lang="ja">
+    <button class="lang-switch" type="button" aria-label="Switch language">EN</button>
 
-  <main class="container">
-    <h1>お問い合わせ</h1>
-    <p class="meta">MeON の不具合報告、ご要望、その他お問い合わせは下記までご連絡ください。</p>
-
-    <div class="contact-card">
-      <h3>📧 メール</h3>
-      <p>
-        <a href="mailto:contact@reqme.jp?subject=%5BMeON%5D%20お問い合わせ">contact@reqme.jp</a>
-      </p>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        24-72 時間以内に返信いたします (平日)。
-      </p>
+    <div class="page-header">
+        <a href="./" class="back" data-lang-block="ja">← MeON サポート</a>
+        <a href="./" class="back" data-lang-block="en">← MeON Support</a>
+        <h1 data-lang-block="ja">お問い合わせ</h1>
+        <h1 data-lang-block="en">Contact</h1>
     </div>
 
-    <h2 class="section-title">お問い合わせ時にご記載ください</h2>
-    <ul>
-      <li>ご利用の iOS バージョン (例: iOS 17.5)</li>
-      <li>端末モデル (例: iPhone 15 Pro)</li>
-      <li>アプリのバージョン (設定 → アプリ情報から確認できます)</li>
-      <li>具体的な現象・再現手順</li>
-      <li>スクリーンショット (添付いただけると解決が早まります)</li>
-    </ul>
+    <!-- ===== Japanese ===== -->
+    <div class="content" data-lang-block="ja">
+        <p style="text-align:center; color:#333;">
+            MeON の不具合報告・ご要望・ご質問は<br>下記よりお気軽にご連絡ください。
+        </p>
 
-    <h2 class="section-title">よくあるご質問</h2>
+        <div class="contact-methods">
+            <a href="mailto:contact@reqme.jp?subject=%5BMeON%5D%20お問い合わせ" class="contact-card">
+                <div class="ico">✉️</div>
+                <div class="info">
+                    <div class="title">メール</div>
+                    <div class="desc">contact@reqme.jp</div>
+                </div>
+                <div class="arr">›</div>
+            </a>
+        </div>
 
-    <h3>試着画像が顔まで変わってしまう</h3>
-    <p>登録した写真が顔のアップ気味だったり、ブレている場合に発生しやすくなります。全身、または上半身がはっきり写った写真への変更をお試しください。</p>
+        <p style="font-size: 13px; color: #86868b; text-align: center;">
+            平日 24〜72 時間以内に返信いたします。
+        </p>
 
-    <h3>「ポイントが足りません」と出る</h3>
-    <p>毎月 1 日に Free プランで 5 ポイントが自動付与されます。それ以上の試着が必要な場合は、設定 → ポイント から有料プラン (Standard / Premium) または単発のポイントパックをご利用ください。</p>
+        <h2>お問い合わせ時にご記載ください</h2>
+        <ul>
+            <li>ご利用の iOS バージョン（例: iOS 17.5）</li>
+            <li>端末モデル（例: iPhone 15 Pro）</li>
+            <li>アプリのバージョン（設定 → アプリ情報から確認できます）</li>
+            <li>具体的な現象・再現手順</li>
+            <li>スクリーンショット（添付いただけると解決が早まります）</li>
+        </ul>
 
-    <h3>共有シートに MeON が出ない</h3>
-    <p>一度 MeON を起動後、iPhone を再起動 (もしくは MeON を強制終了→再起動) してから再度お試しください。それでも表示されない場合は iOS の設定 → アクションから手動で有効化できます。</p>
+        <h2>よくあるご質問</h2>
 
-    <h3>登録した写真や試着履歴を全部削除したい</h3>
-    <p>履歴は履歴詳細画面のゴミ箱アイコンから個別削除できます。プロフィール写真は設定 → プロフィール → 写真を削除から削除できます。すべて消したい場合は、本アプリをアンインストールしてください。</p>
+        <h3>試着画像が顔まで変わってしまう</h3>
+        <p>登録した写真が顔のアップ気味だったり、ブレている場合に発生しやすくなります。全身、または上半身がはっきり写った写真への変更をお試しください。</p>
 
-    <h2 class="section-title">関連リンク</h2>
-    <ul>
-      <li><a href="terms.html">利用規約</a></li>
-      <li><a href="privacy.html">プライバシーポリシー</a></li>
-      <li><a href="tokushoho.html">特定商取引法に基づく表記</a></li>
-    </ul>
-  </main>
+        <h3>「ポイントが足りません」と出る</h3>
+        <p>毎月 1 日に Free プランで一定のポイントが自動付与されます。それ以上の試着が必要な場合は、設定 → ポイント から有料プラン（Standard / Premium）または単発のポイントパックをご利用ください。</p>
 
-  <footer>
-    <p>© <span id="year"></span> MeON. All rights reserved.</p>
-    <p>
-      <a href="./">ホーム</a> ・
-      <a href="terms.html">利用規約</a> ・
-      <a href="privacy.html">プライバシーポリシー</a> ・
-      <a href="tokushoho.html">特商法表記</a>
-    </p>
-  </footer>
+        <h3>共有シートに MeON が出ない</h3>
+        <p>一度 MeON を起動後、iPhone を再起動（もしくは MeON を強制終了→再起動）してから再度お試しください。それでも表示されない場合は iOS の設定 → アクションから手動で有効化できます。</p>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+        <h3>登録した写真や試着履歴を全部削除したい</h3>
+        <p>履歴は履歴詳細画面のゴミ箱アイコンから個別削除できます。プロフィール写真は設定 → プロフィール → 写真を削除から削除できます。すべて消したい場合は、本アプリをアンインストールしてください。</p>
+
+        <h3>サブスクリプションを解約したい</h3>
+        <p>iOS の「設定」→ Apple ID → サブスクリプション から解約できます。返金については <a href="https://support.apple.com/ja-jp" target="_blank" rel="noopener">Apple サポート</a> にお問い合わせください。</p>
+    </div>
+
+    <!-- ===== English ===== -->
+    <div class="content" data-lang-block="en">
+        <p style="text-align:center; color:#333;">
+            For bug reports, feature requests, and questions,<br>please reach out below.
+        </p>
+
+        <div class="contact-methods">
+            <a href="mailto:contact@reqme.jp?subject=%5BMeON%5D%20Support" class="contact-card">
+                <div class="ico">✉️</div>
+                <div class="info">
+                    <div class="title">Email</div>
+                    <div class="desc">contact@reqme.jp</div>
+                </div>
+                <div class="arr">›</div>
+            </a>
+        </div>
+
+        <p style="font-size: 13px; color: #86868b; text-align: center;">
+            We reply within 24–72 hours on weekdays.
+        </p>
+
+        <h2>Please include in your message</h2>
+        <ul>
+            <li>Your iOS version (e.g., iOS 17.5)</li>
+            <li>Device model (e.g., iPhone 15 Pro)</li>
+            <li>App version (Settings → App Info)</li>
+            <li>What you were doing and what happened (steps to reproduce)</li>
+            <li>Screenshots (helps us resolve faster)</li>
+        </ul>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>The try-on result changes my face</h3>
+        <p>This often happens when the registered photo is too close to the face or blurry. Try replacing it with a clearer full-body or upper-body photo.</p>
+
+        <h3>"Not enough points"</h3>
+        <p>Free-plan users receive a small monthly point grant on the 1st. For more try-ons, visit Settings → Points to subscribe (Standard / Premium) or buy a one-time point pack.</p>
+
+        <h3>MeON doesn't appear in the share sheet</h3>
+        <p>Launch MeON once, then restart your iPhone (or force-quit and reopen MeON). If it still doesn't show up, enable it manually in iOS Settings → Actions.</p>
+
+        <h3>Delete all my photos and history</h3>
+        <p>Tap the trash icon on the history detail screen to delete entries one by one. Remove your profile photo from Settings → Profile → Delete Photo. To wipe everything, uninstall the App.</p>
+
+        <h3>Cancel my subscription</h3>
+        <p>Cancel from iOS Settings → Apple ID → Subscriptions. For refunds, please contact <a href="https://support.apple.com" target="_blank" rel="noopener">Apple Support</a>.</p>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> MeON</p>
+    </footer>
+
+    <script src="assets/lang.js"></script>
 </body>
 </html>

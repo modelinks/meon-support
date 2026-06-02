@@ -1,61 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MeON — AI バーチャル試着</title>
-  <meta name="description" content="MeON はあなたの写真と、気になる服のスクショや画像を組み合わせて AI で試着できる iOS アプリです。">
-  <link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="title-ja" content="MeON - サポート">
+    <meta name="title-en" content="MeON - Support">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <title>MeON - サポート</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-  <nav class="nav">
-    <div class="nav__inner">
-      <a href="./" class="nav__brand">MeON</a>
-      <div class="nav__links">
-        <a href="./" class="active">ホーム</a>
-        <a href="terms.html">利用規約</a>
-        <a href="privacy.html">プライバシー</a>
-        <a href="contact.html">お問い合わせ</a>
-      </div>
+<body data-lang="ja">
+    <button class="lang-switch" type="button" aria-label="Switch language">EN</button>
+
+    <div class="header">
+        <h1>MeON</h1>
+        <p data-lang-block="ja">AI で「自分が着た姿」がその場で分かる試着アプリ</p>
+        <p data-lang-block="en">See yourself in any outfit, instantly — AI virtual try-on</p>
     </div>
-  </nav>
 
-  <main class="container">
-    <section class="hero">
-      <h1>気になる服を、<br>今すぐ試着。</h1>
-      <p>あなたの写真を一度登録するだけ。SNS や Web で気になった服を、AI が試着画像にしてくれる iOS アプリです。</p>
-    </section>
+    <div class="hero">
+        <div class="hero-icon">
+            <img src="icon-192.png" alt="MeON app icon">
+        </div>
+        <h2 data-lang-block="ja">サポートページ</h2>
+        <h2 data-lang-block="en">Support Center</h2>
+        <p data-lang-block="ja">MeON に関する各種情報をご確認いただけます。</p>
+        <p data-lang-block="en">Find everything you need to know about MeON.</p>
+        <div class="store-buttons">
+            <a href="#" data-lang-block="ja">App Store で入手 (準備中)</a>
+            <a href="#" data-lang-block="en">Get it on the App Store (coming soon)</a>
+        </div>
+    </div>
 
-    <section class="cards">
-      <div class="card">
-        <h3>📸 写真を登録</h3>
-        <p>全身、または上半身がはっきり写った写真を 1 枚だけ登録します。</p>
-      </div>
-      <div class="card">
-        <h3>👗 服を選ぶ</h3>
-        <p>カメラロールのスクショから、または各 SNS の共有シートから MeON に送信して試着できます。</p>
-      </div>
-      <div class="card">
-        <h3>✨ AI で試着</h3>
-        <p>Gemini をベースにした AI が、あなたの体に合わせた試着画像を数十秒で生成します。</p>
-      </div>
-    </section>
+    <div class="cards">
+        <a href="contact.html" class="card">
+            <div class="card-icon purple">💬</div>
+            <div class="card-body" data-lang-block="ja">
+                <h3>お問い合わせ</h3>
+                <p>ご質問・ご要望・不具合報告</p>
+            </div>
+            <div class="card-body" data-lang-block="en">
+                <h3>Contact</h3>
+                <p>Questions, feature requests, bug reports</p>
+            </div>
+            <span class="card-arrow">›</span>
+        </a>
+        <a href="terms.html" class="card">
+            <div class="card-icon blue">📋</div>
+            <div class="card-body" data-lang-block="ja">
+                <h3>利用規約</h3>
+                <p>サービスのご利用に関する規約</p>
+            </div>
+            <div class="card-body" data-lang-block="en">
+                <h3>Terms of Use</h3>
+                <p>Service terms and conditions</p>
+            </div>
+            <span class="card-arrow">›</span>
+        </a>
+        <a href="privacy.html" class="card">
+            <div class="card-icon green">🔒</div>
+            <div class="card-body" data-lang-block="ja">
+                <h3>プライバシーポリシー</h3>
+                <p>個人情報の取り扱いについて</p>
+            </div>
+            <div class="card-body" data-lang-block="en">
+                <h3>Privacy Policy</h3>
+                <p>How we handle your data</p>
+            </div>
+            <span class="card-arrow">›</span>
+        </a>
+        <a href="tokushoho.html" class="card" data-lang-block="ja">
+            <div class="card-icon amber">🏢</div>
+            <div class="card-body">
+                <h3>特定商取引法に基づく表記</h3>
+                <p>販売事業者情報</p>
+            </div>
+            <span class="card-arrow">›</span>
+        </a>
+    </div>
 
-    <p style="margin-top: 48px; text-align: center;">
-      <a class="cta" href="https://apps.apple.com" target="_blank" rel="noopener">App Store で入手 (準備中)</a>
-    </p>
-  </main>
+    <footer>
+        <p>&copy; <span id="year"></span> MeON</p>
+    </footer>
 
-  <footer>
-    <p>© <span id="year"></span> MeON. All rights reserved.</p>
-    <p>
-      <a href="terms.html">利用規約</a> ・
-      <a href="privacy.html">プライバシーポリシー</a> ・
-      <a href="tokushoho.html">特商法表記</a> ・
-      <a href="contact.html">お問い合わせ</a>
-    </p>
-  </footer>
-
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="assets/lang.js"></script>
 </body>
 </html>
